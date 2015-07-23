@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.charleshieger.parsepractice.ChatActivity"
+    android:background="#ffc7fffa">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMessageField"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:textSize="18dp"
+        android:hint="type a messege"
+        android:minLines="1"
+        android:minHeight="40dp"
+        android:minWidth="240dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvMessages"
+        android:layout_below="@+id/etMessageField"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignTop="@+id/etMessageField"
+        android:layout_toEndOf="@+id/etMessageField"
+        android:textAllCaps="false"
+        android:textColor="#ff4e73ff"
+        android:onClick="onSend" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.charleshieger.parsepractice.LoginActivity"
+    android:backgroundTint="#00ffffff"
+    android:background="#00ffffff">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etUsernameField"
+        android:layout_x="40dp"
+        android:layout_y="40dp"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPasswordField"
+        android:layout_x="40dp"
+        android:layout_y="100dp"
+        android:hint="Password"
+        android:fontFamily="sans" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Sign In"
+        android:id="@+id/btnSignIn"
+        android:layout_x="40dp"
+        android:layout_y="160dp"
+        android:background="#ff73a4fb"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onSignIn" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:id="@+id/btnSignOut"
+        android:layout_x="40dp"
+        android:layout_y="220dp"
+        android:background="#00ffffff"
+        android:backgroundTint="#00ffffff"
+        android:textColor="#ff6e9cff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="onSignUp" />
+</AbsoluteLayout>
